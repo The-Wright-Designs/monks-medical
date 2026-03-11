@@ -1,21 +1,30 @@
 "use server";
 
-import data from "@/_data/general-data.json";
 import nodemailer from "nodemailer";
 import { emailTemplateHtml } from "@/_lib/email-template-html";
+import { verifyRecaptchaToken } from "@/_lib/verify-recaptcha";
 
-export async function sendEmail(formData) {
+export async function sendEmail(
+  formData: FormData
+): Promise<{ success: boolean }> {
   const honey = formData.get("honey");
 
   if (honey !== "") {
     return { success: false };
   }
 
+  const recaptchaToken = formData.get("recaptchaToken") as string;
+  const recaptchaResult = await verifyRecaptchaToken(recaptchaToken);
+
+  if (!recaptchaResult.success) {
+    return { success: false };
+  }
+
   try {
-    const name = formData.get("name");
-    const phone = formData.get("tel");
-    const email = formData.get("email");
-    const message = formData.get("message");
+    const name = formData.get("name") as string;
+    const phone = formData.get("tel") as string;
+    const email = formData.get("email") as string;
+    const message = formData.get("message") as string;
 
     const emailHtmlContent = emailTemplateHtml({
       name,
@@ -26,7 +35,7 @@ export async function sendEmail(formData) {
 
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
-      port: process.env.SMTP_PORT,
+      port: Number(process.env.SMTP_PORT),
       secure: false,
       auth: {
         user: process.env.SMTP_USER,
@@ -50,17 +59,3 @@ export async function sendEmail(formData) {
     return { success: false };
   }
 }
-
-const {
-  homePage: {
-    contact: { email, phone },
-  },
-} = data;
-
-export const showEmailAddress = async () => {
-  return email;
-};
-
-export const showPhoneNumber = async () => {
-  return phone;
-};

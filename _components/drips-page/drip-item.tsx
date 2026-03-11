@@ -32,7 +32,7 @@ const DripItems = ({ data, cssClasses }: Props) => {
               <h3 className="text-left">{title}</h3>
               <div>
                 <p className="underline text-left mb-4">Ingredients:</p>
-                <p className="text-justify">{paragraph}</p>
+                <p>{paragraph}</p>
               </div>
             </div>
             <Image
@@ -42,7 +42,7 @@ const DripItems = ({ data, cssClasses }: Props) => {
                 "aspect-video min-[800px]:aspect-none min-[800px]:h-full",
                 {
                   "scale-x-[-1]": index === 1,
-                }
+                },
               )}
               width={800}
               height={450}

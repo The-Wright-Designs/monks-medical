@@ -1,27 +1,23 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 
-import classNames from "classnames";
+import Link from "next/link";
+
 import Button from "@/_components/button";
-import Recaptcha from "@/_lib/recaptcha";
-import { sendEmail } from "@/_actions/actions";
+import { sendEmail } from "@/_actions/email-actions";
 
 interface Props {
   cssClasses?: string;
 }
 
 const ContactForm = ({ cssClasses }: Props) => {
-  const [submissionStartTime, setSubmissionStartTime] = useState(0);
-  const [validateRecaptcha, setValidateRecaptcha] = useState(false);
+  const { executeRecaptcha } = useGoogleReCaptcha();
   const [showEmailSubmitted, setShowEmailSubmitted] = useState(false);
   const [submitError, setSubmitError] = useState(false);
 
   useEffect(() => {
-    const startSubmissionTimer = () => {
-      setSubmissionStartTime(new Date().getTime());
-    };
-    startSubmissionTimer();
     if (showEmailSubmitted) {
       const element = document.getElementById("email-submitted");
       if (element) {
@@ -29,21 +25,6 @@ const ContactForm = ({ cssClasses }: Props) => {
       }
     }
   }, [showEmailSubmitted]);
-
-  const handleRecaptchaChange = (value: any) => {
-    if (value === null) {
-      setValidateRecaptcha(false);
-      console.log("Recaptcha expired");
-    } else {
-      const elapsedTime = new Date().getTime() - submissionStartTime;
-      if (elapsedTime < 3000) {
-        console.error("Form submitted too quickly. Possible bot activity.");
-        return;
-      } else {
-        setValidateRecaptcha(!!value);
-      }
-    }
-  };
 
   return (
     <div>
@@ -60,8 +41,9 @@ const ContactForm = ({ cssClasses }: Props) => {
           </p>
         </>
       ) : submitError ? (
-        <p className="italic">
-          Something went wrong sending your message. Please try again or contact us directly.
+        <p className="italic text-error text-subheading">
+          Something went wrong sending your message. Please try again or contact
+          us directly.
         </p>
       ) : (
         <section
@@ -69,10 +51,26 @@ const ContactForm = ({ cssClasses }: Props) => {
         >
           <form
             action={async (formData) => {
-              const result = await sendEmail(formData);
-              if (result.success) {
-                setShowEmailSubmitted(true);
-              } else {
+              try {
+                if (!executeRecaptcha) {
+                  await new Promise((resolve) => setTimeout(resolve, 1000));
+                  if (!executeRecaptcha) {
+                    setSubmitError(true);
+                    return;
+                  }
+                }
+
+                const recaptchaToken = await executeRecaptcha("contact_form");
+                formData.append("recaptchaToken", recaptchaToken);
+
+                const result = await sendEmail(formData);
+                if (result.success) {
+                  setShowEmailSubmitted(true);
+                } else {
+                  setSubmitError(true);
+                }
+              } catch (error) {
+                console.error("Contact form error:", error);
                 setSubmitError(true);
               }
             }}
@@ -121,20 +119,35 @@ const ContactForm = ({ cssClasses }: Props) => {
                 placeholder="Type your message here..."
               ></textarea>
             </label>
-            <Button
-              form
-              type="submit"
-              cssClasses={classNames("", {
-                "opacity-50 desktopSmall:cursor-not-allowed":
-                  !validateRecaptcha,
-                "hover:desktopSmall:opacity-90": validateRecaptcha,
-              })}
-              disabled={!validateRecaptcha}
-              ariaLabel="Submit form"
-            >
-              Submit
-            </Button>
-            <Recaptcha onChange={handleRecaptchaChange} />
+            <div className="flex flex-col gap-4">
+              <Button
+                form
+                type="submit"
+                cssClasses="hover:desktopSmall:opacity-90"
+                ariaLabel="Submit form"
+              >
+                Submit
+              </Button>
+              <p className="text-[12px] font-thin">
+                This site is protected by reCAPTCHA and the Google{" "}
+                <Link
+                  href="https://policies.google.com/privacy"
+                  target="_blank"
+                  className="text-[12px] font-light text-link underline underline-offset-4 desktop:hover:opacity-85 ease-in-out duration-300"
+                >
+                  Privacy Policy
+                </Link>{" "}
+                and{" "}
+                <Link
+                  href="https://policies.google.com/terms"
+                  target="_blank"
+                  className="text-[12px] font-light text-link underline underline-offset-4 desktop:hover:opacity-85 ease-in-out duration-300"
+                >
+                  Terms of Service
+                </Link>{" "}
+                apply.
+              </p>
+            </div>
           </form>
         </section>
       )}

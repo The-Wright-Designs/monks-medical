@@ -1,4 +1,11 @@
-const escapeHtml = (str) => {
+interface EmailTemplateParams {
+  name: string;
+  email: string;
+  message: string;
+  phone?: string;
+}
+
+const escapeHtml = (str: string | undefined): string => {
   if (!str) return "";
   return String(str)
     .replace(/&/g, "&amp;")
@@ -7,7 +14,12 @@ const escapeHtml = (str) => {
     .replace(/"/g, "&quot;");
 };
 
-export const emailTemplateHtml = ({ name, email, message, phone }) => {
+export const emailTemplateHtml = ({
+  name,
+  email,
+  message,
+  phone,
+}: EmailTemplateParams): string => {
   return `<html lang="en">
   <head>
     <meta charSet="UTF-8" />

@@ -10,6 +10,7 @@
   --color-khaki: #A5996D;
   --color-green: #A6B2A9;
   --color-link: #0000EE;
+  --color-error: #FF0000;
 
   --font-family-*: initial;
   --font-family-larsseit: "Larsseit";
@@ -105,7 +106,7 @@
   }
 
   p, ul, ol {
-    @apply text-paragraph text-center desktopSmall:text-justify
+    @apply text-paragraph text-center desktopSmall:text-left
   }
 
   a {
@@ -149,10 +150,9 @@
   }
 
   .spinner {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     position: relative;
-    margin: -0.3rem auto;
   }
 
   .spinner::before,
@@ -234,4 +234,8 @@
     animation-delay: 0.5s;
   }
 
+}
+
+.grecaptcha-badge {
+  visibility: hidden;
 }

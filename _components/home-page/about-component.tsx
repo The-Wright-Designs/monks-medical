@@ -22,9 +22,7 @@ const AboutComponent = () => {
             Dr. Kyle Rorke
           </h2>
           {paragraphs.map((item, index) => (
-            <p key={index} className="min-[800px]:text-justify">
-              {item}
-            </p>
+            <p key={index}>{item}</p>
           ))}
           <Button
             link="mailto:info@monksmedical.com"

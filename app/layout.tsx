@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 
 import Header from "../_components/navigation/header";
 import Footer from "../_components/navigation/footer";
+import RecaptchaProvider from "@/_lib/recaptcha-provider";
 
-import "./globals.css";
+import "@/_styles/globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://monksmedical.com"),
@@ -34,11 +35,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Header />
-        <div className="max-w-[1100px] mx-7 min-[1156px]:mx-auto">
-          {children}
-        </div>
-        <Footer />
+        <RecaptchaProvider>
+          <Header />
+          <div className="max-w-[1100px] mx-7 min-[1156px]:mx-auto">
+            {children}
+          </div>
+          <Footer />
+        </RecaptchaProvider>
       </body>
     </html>
   );
