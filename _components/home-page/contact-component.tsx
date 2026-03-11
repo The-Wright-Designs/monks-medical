@@ -4,10 +4,10 @@ import { useState, lazy, Suspense } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import { showEmailAddress, showPhoneNumber } from "@/app/_actions/actions";
+import { showEmailAddress, showPhoneNumber } from "@/_actions/actions";
 import ContactForm from "./contact/contact-form";
 
-import data from "@/app/_data/general-data.json";
+import data from "@/_data/general-data.json";
 
 const LazyContactMap = lazy(() => import("./contact/contact-map"));
 

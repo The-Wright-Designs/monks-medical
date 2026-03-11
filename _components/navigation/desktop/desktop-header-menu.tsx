@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 
-import data from "@/app/_data/nav-data.json";
+import data from "@/_data/nav-data.json";
 
 const scrollIntoView = (section: string) => {
   const element = document.getElementById(section);

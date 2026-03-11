@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import Logo from "../../logo";
 
-import data from "@/app/_data/nav-data.json";
+import data from "@/_data/nav-data.json";
 
 const DesktopHeader = () => {
   return (

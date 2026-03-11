@@ -3,7 +3,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade, Pagination, Navigation } from "swiper/modules";
 
-import data from "@/app/_data/general-data.json";
+import data from "@/_data/general-data.json";
 
 import "swiper/css";
 import "swiper/css/effect-fade";

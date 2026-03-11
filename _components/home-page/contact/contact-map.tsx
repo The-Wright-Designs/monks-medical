@@ -6,7 +6,7 @@ interface Props {
 
 const ContactMap = ({ cssClasses }: Props) => {
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: "AIzaSyBEHEWRnqpHLrFtUqs2oyORbfpvRwmdoTM",
+    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ?? "",
   });
   if (!isLoaded)
     return (

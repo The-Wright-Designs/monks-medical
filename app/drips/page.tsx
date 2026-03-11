@@ -1,6 +1,6 @@
-import DripItems from "../_components/drips-page/drip-item";
+import DripItems from "../../_components/drips-page/drip-item";
 
-import data from "@/app/_data/general-data.json";
+import data from "@/_data/general-data.json";
 
 const Drips = () => {
   const { dripsPage } = data;

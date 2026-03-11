@@ -2,9 +2,9 @@ import Image from "next/image";
 
 import classNames from "classnames";
 
-import Button from "@/app/_components/button";
+import Button from "@/_components/button";
 
-import data from "@/app/_data/general-data.json";
+import data from "@/_data/general-data.json";
 
 const AboutComponent = () => {
   const {

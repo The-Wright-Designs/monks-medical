@@ -1,3 +1,12 @@
+const escapeHtml = (str) => {
+  if (!str) return "";
+  return String(str)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+};
+
 export const emailTemplateHtml = ({ name, email, message, phone }) => {
   return `<html lang="en">
   <head>
@@ -19,21 +28,21 @@ export const emailTemplateHtml = ({ name, email, message, phone }) => {
         <td>
           <h3 style="font-size: 1.25rem">Website form submission</h3>
           <p style="font-size: 1rem; margin-top: 1rem; font-weight: 500;">
-            Name: <span style="font-weight: 200; font-style: italic;">${name}</span>
+            Name: <span style="font-weight: 200; font-style: italic;">${escapeHtml(name)}</span>
           </p>
           ${
             phone &&
             `<p style="font-size: 1rem; font-weight: 500;">
-                Phone Number: <span style="font-weight: 200; font-style: italic;">${phone}</span>
+                Phone Number: <span style="font-weight: 200; font-style: italic;">${escapeHtml(phone)}</span>
               </p>`
           }
           <p style="font-size: 1rem; font-weight: 500;">
-            Email address: <span style="font-weight: 200; font-style: italic;">${email}</span>
+            Email address: <span style="font-weight: 200; font-style: italic;">${escapeHtml(email)}</span>
           </p>
           <p style="font-size: 1rem; font-weight: 500;">
             Message:
             <br />
-            <span style="font-weight: 200; font-style: italic;">${message}</span>
+            <span style="font-weight: 200; font-style: italic;">${escapeHtml(message)}</span>
           </p>
         </td>
       </tr>

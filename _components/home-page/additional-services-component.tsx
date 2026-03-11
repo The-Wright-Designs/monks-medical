@@ -7,7 +7,7 @@ import classNames from "classnames";
 
 import Button from "../button";
 
-import data from "@/app/_data/general-data.json";
+import data from "@/_data/general-data.json";
 
 const AdditionalServicesComponent = () => {
   const {
@@ -43,7 +43,7 @@ const AdditionalServicesComponent = () => {
                   {
                     "triangle-right-large": index < 2,
                     "triangle-right": index >= 2,
-                  }
+                  },
                 )}
               ></span>
             )}

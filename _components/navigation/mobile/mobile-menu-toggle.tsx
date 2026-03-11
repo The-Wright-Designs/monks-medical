@@ -3,7 +3,7 @@ import { usePathname } from "next/navigation";
 
 import classNames from "classnames";
 
-import data from "@/app/_data/nav-data.json";
+import data from "@/_data/nav-data.json";
 
 interface Props {
   onClick?: () => void;

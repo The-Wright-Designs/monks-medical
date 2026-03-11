@@ -1,11 +1,5 @@
-import { BlogDataProvider } from "../_context/blog-context";
-
 const BlogLayout = ({ children }: { children: React.ReactNode }) => {
-  return (
-    <BlogDataProvider>
-      <div>{children}</div>
-    </BlogDataProvider>
-  );
+  return <div>{children}</div>;
 };
 
 export default BlogLayout;
