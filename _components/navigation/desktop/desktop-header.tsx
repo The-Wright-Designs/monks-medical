@@ -6,8 +6,8 @@ import data from "@/_data/nav-data.json";
 
 const DesktopHeader = () => {
   return (
-    <header className="hidden sticky top-0 z-50 w-full desktopSmall:flex border-b-4 bg-white border-brown drop-shadow-default">
-      <div className="flex w-full justify-between mx-auto max-w-[1100px] px-8 py-6 desktopSmall:bg-[url('https://ik.imagekit.io/thewrightdesigns/tr:q-55,w-1150/monks-medical-54.jpg')] bg-cover bg-center relative">
+    <header className="hidden sticky top-0 z-50 w-full desktop:flex border-b-4 bg-white border-brown drop-shadow-default">
+      <div className="flex w-full justify-between mx-auto max-w-[1100px] px-8 py-6 desktop:bg-[url('https://ik.imagekit.io/thewrightdesigns/tr:q-55,w-1150/monks-medical-54.jpg')] bg-cover bg-center relative">
         <div className=" bg-gradient-to-r from-white to-transparent w-8 absolute left-0 top-0 h-full"></div>
         <Logo large />
         <ul className="flex gap-3 items-end -mb-2">

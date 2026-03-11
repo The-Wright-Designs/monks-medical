@@ -15,16 +15,15 @@
   ],
   "homePage": {
     "about": {
-      "kylesImage": "/assets/images/monks-medical-33.jpg",
+      "teamImage": "/assets/images/about/monks-medical-team.jpg",
       "images": [
-        "/assets/images/monks-medical-8.jpg",
-        "/assets/images/monks-medical-10.jpg",
-        "/assets/images/monks-medical-64.jpg"
+        "/assets/images/about/about-image-1.png",
+        "/assets/images/about/about-image-2.png",
+        "/assets/images/about/about-image-3.jpg"
       ],
       "paragraphs": [
-        "At Monks Medical, I strive to create a relaxed environment for patients with a clean and unique look. Here, we take a holistic approach to medicine. Understanding patients' ideas and concerns is crucial. This approach empowers patients with knowledge rather than simply treating the immediate issue.",
-        "Lately, I've developed a passion for metabolic health. I focus on establishing a strong foundation of health before resorting to medication. This approach, known as functional medicine, combines both Eastern and Western philosophies, allowing us to treat both the disease and the person, promoting longevity. Additionally, I have a keen interest in Sports and Exercise medicine. I firmly believe that 'movement is life,' and staying active reduces the risk of illness.",
-        "I believe in visualising ourselves getting better every day. That means waking up each morning with a purpose. My purpose is to combine my passions for sports, nutrition, and medicine to equip my patients with the tools they need to enhance their health, improving their well-being in mind, body, and soul."
+        "Monks Medical is a modern, patient-centred general practice in Plettenberg Bay led by Dr Kyle Rorke. The practice is built on personalised, thorough medical care that integrates conventional general practice with a collaborative, multidisciplinary healthcare model.",
+        "The practice provides all the services expected from a trusted family GP — including acute consultations, chronic disease management, routine medicals, pregnancy care, and childhood vaccination programmes — while also offering an expanded healthcare environment designed to optimise long-term wellbeing."
       ]
     },
     "services": {

@@ -17,19 +17,15 @@
 
   --text-*: initial;
   --text-heading: 3rem;
-  --text-heading--line-height: 110%;
   --text-heading--letter-spacing: 0.18rem;
   --text-heading--font-weight: 700;
   --text-subheading: 1.5rem;
-  --text-subheading--line-height: 120%;
   --text-subheading--letter-spacing: 0.06rem;
   --text-subheading--font-weight: 500;
   --text-paragraph: 1rem;
-  --text-paragraph--line-height: 125%;
   --text-paragraph--letter-spacing: 0.02rem;
   --text-paragraph--font-weight: 300;
   --text-button: 1rem;
-  --text-button--line-height: 125%;
   --text-button--letter-spacing: 0.02rem;
   --text-button--font-weight: 500;
   --text-logoLarge: 1rem;
@@ -43,10 +39,8 @@
 
   --breakpoint-*: initial;
   --breakpoint-phone: 400px;
-  --breakpoint-tablet: 600px;
-  --breakpoint-tabletLarge: 950px;
-  --breakpoint-desktopSmall: 1100px;
-  --breakpoint-desktop: 1500px;
+  --breakpoint-tablet: 800px;
+  --breakpoint-desktop: 1280px;
 
   --drop-shadow-default: 0 4px 4px rgba(45, 44, 51, 0.25);
 
@@ -98,15 +92,15 @@
 
   h1,
   h2 {
-    @apply text-heading uppercase text-center desktopSmall:text-left
+    @apply text-heading uppercase
   }
 
   h3, h4, h5, h6 {
-    @apply text-subheading text-center desktopSmall:text-left
+    @apply text-subheading
   }
 
   p, ul, ol {
-    @apply text-paragraph text-center desktopSmall:text-left
+    @apply text-paragraph
   }
 
   a {

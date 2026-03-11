@@ -20,13 +20,13 @@ const DripItems = ({ data, cssClasses }: Props) => {
           <section
             key={index}
             className={classNames("grid gap-10 min-[800px]:grid-cols-2", {
-              "desktopSmall:grid-cols-[1fr_400px]": index % 2 === 0,
-              "desktopSmall:grid-cols-[400px_1fr]": index % 2 === 1,
+              "desktop:grid-cols-[1fr_400px]": index % 2 === 0,
+              "desktop:grid-cols-[400px_1fr]": index % 2 === 1,
             })}
           >
             <div
               className={classNames("grid gap-7", {
-                "desktopSmall:order-2": index % 2 === 1,
+                "desktop:order-2": index % 2 === 1,
               })}
             >
               <h3 className="text-left">{title}</h3>

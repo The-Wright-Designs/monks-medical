@@ -70,11 +70,7 @@ const transform = (node: any) => {
   }
 };
 
-const BlogPage = async ({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}) => {
+const BlogPage = async ({ params }: { params: Promise<{ slug: string }> }) => {
   const { slug } = await params;
   const post = await fetchPost(slug);
 
@@ -105,14 +101,14 @@ const BlogPage = async ({
           alt={post.title.rendered}
           width={200}
           height={200}
-          className="object-cover aspect-video tabletLarge:max-h-[500px]"
+          className="object-cover aspect-video desktop:max-h-[500px]"
         />
       )}
       <div className="grid gap-5">
         {parse(post.content.rendered, { replace: transform })}
       </div>
       <Button
-        cssClasses="desktopSmall:mr-auto"
+        cssClasses="desktop:mr-auto"
         link="/blog"
         ariaLabel="Back to Blog Page"
       >

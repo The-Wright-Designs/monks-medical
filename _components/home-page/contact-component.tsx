@@ -48,11 +48,11 @@ const ContactComponent = () => {
           />
         </div>
       </div>
-      <div id="contact" className=" desktopSmall:-translate-y-20"></div>
+      <div id="contact" className=" desktop:-translate-y-20"></div>
       <div className="grid gap-20 pt-20">
         <h2>Get In Touch</h2>
         <div className="relative">
-          <ul className="grid gap-10 tablet:gap-7 desktopSmall:gap-5">
+          <ul className="grid gap-10 tablet:gap-7 desktop:gap-5">
             <li className="grid gap-2 place-items-start font-medium phone:grid-cols-[75px_1fr]">
               Phone:
               <ShowPhoneNumber />
@@ -65,10 +65,10 @@ const ContactComponent = () => {
               Address: <span className="text-left font-light ">{address}</span>
             </li>
           </ul>
-          <div className="flex gap-10 desktopSmall:gap-5 mt-10 desktopSmall:mt-5">
+          <div className="flex gap-10 desktop:gap-5 mt-10 desktop:mt-5">
             <Link
               href={facebook}
-              className="p-2 -m-2 desktopSmall:p-0 desktopSmall:m-0 hover:desktopSmall:opacity-9 ease-in-out duration-300"
+              className="p-2 -m-2 desktop:p-0 desktop:m-0 hover:desktop:opacity-9 ease-in-out duration-300"
               target="_blank"
             >
               <Image
@@ -76,12 +76,12 @@ const ContactComponent = () => {
                 alt="Facebook icon"
                 width={40}
                 height={40}
-                className="w-9 h-9 drop-shadow-none desktopSmall:w-7 desktopSmall:h-7"
+                className="w-9 h-9 drop-shadow-none desktop:w-7 desktop:h-7"
               />
             </Link>
             <Link
               href={instagram}
-              className="p-2 -m-2 desktopSmall:p-0 desktopSmall:m-0 hover:desktopSmall:opacity-90 ease-in-out duration-300"
+              className="p-2 -m-2 desktop:p-0 desktop:m-0 hover:desktop:opacity-90 ease-in-out duration-300"
               target="_blank"
             >
               <Image
@@ -89,11 +89,11 @@ const ContactComponent = () => {
                 alt="Instagram icon"
                 width={40}
                 height={40}
-                className="w-9 h-9 drop-shadow-none desktopSmall:w-7 desktopSmall:h-7"
+                className="w-9 h-9 drop-shadow-none desktop:w-7 desktop:h-7"
               />
             </Link>
           </div>
-          <div className="hidden min-[800px]:block absolute top-0 right-0 h-full desktopSmall:h-[250px] desktopSmall:w-auto desktopSmall:-top-14">
+          <div className="hidden min-[800px]:block absolute top-0 right-0 h-full desktop:h-[250px] desktop:w-auto desktop:-top-14">
             <Image
               src="/assets/icons/monks-medical-stamp.png"
               alt="Monks Medical"
@@ -104,7 +104,7 @@ const ContactComponent = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-20 pt-20 min-[800px]:grid grid-cols-2 min-[800px]:gap-10 desktopSmall:gap-20">
+      <div className="flex flex-col gap-20 pt-20 min-[800px]:grid grid-cols-2 min-[800px]:gap-10 desktop:gap-20">
         <Suspense
           fallback={
             <div

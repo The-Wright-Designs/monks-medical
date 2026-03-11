@@ -123,7 +123,7 @@ const ContactForm = ({ cssClasses }: Props) => {
               <Button
                 form
                 type="submit"
-                cssClasses="hover:desktopSmall:opacity-90"
+                cssClasses="hover:desktop:opacity-90"
                 ariaLabel="Submit form"
               >
                 Submit

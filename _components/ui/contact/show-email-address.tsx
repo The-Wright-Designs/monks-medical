@@ -32,7 +32,7 @@ const ShowEmailAddress = () => {
   if (showEmail === "Show email address") {
     return (
       <button
-        className="font-light text-link italic p-2 -m-2 cursor-pointer hover:desktopSmall:text-brown desktopSmall:p-0 desktopSmall:m-0 desktop:hover:cursor-pointer"
+        className="font-light text-link italic p-2 -m-2 cursor-pointer hover:desktop:text-brown desktop:p-0 desktop:m-0 desktop:hover:cursor-pointer"
         onClick={handleShowEmailAddress}
         aria-label="Show email address"
       >
@@ -44,7 +44,7 @@ const ShowEmailAddress = () => {
   return (
     <Link
       href={`mailto:${showEmail}`}
-      className="text-link font-light p-2 -m-2 desktopSmall:p-0 desktopSmall:m-0"
+      className="text-link font-light p-2 -m-2 desktop:p-0 desktop:m-0"
     >
       {showEmail}
     </Link>

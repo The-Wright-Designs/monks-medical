@@ -3,7 +3,10 @@
 import Link from "next/link";
 import { useFormStatus } from "react-dom";
 
-import classNames from "classnames";
+import {
+  primaryButtonStyles,
+  defaultButtonStyles,
+} from "@/_styles/button-styles";
 
 interface Props {
   link?: string;
@@ -34,19 +37,7 @@ const Button = ({
 
   if (!additionalServices && link) {
     return (
-      <Link
-        href={link}
-        className={classNames(
-          `px-7 pt-[19px] pb-4 text-center rounded-lg uppercase text-button hover:desktopSmall:opacity-90 ease-in-out duration-300 desktop:hover:cursor-pointer ${cssClasses}`,
-          {
-            "bg-brown text-white": backgroundColor === "brown",
-            "bg-green text-white": backgroundColor === "green",
-            "bg-khaki text-white": backgroundColor === "khaki",
-            "bg-black text-white": backgroundColor === "black",
-            "bg-lightBrown text-black": backgroundColor === "light brown",
-          },
-        )}
-      >
+      <Link href={link} className={primaryButtonStyles(backgroundColor, cssClasses)}>
         {children}
       </Link>
     );
@@ -54,7 +45,7 @@ const Button = ({
     return (
       <button
         type={type || "button"}
-        className={`px-7 py-4 text-center rounded-lg uppercase text-button bg-black text-white desktop:hover:cursor-pointer ${cssClasses}`}
+        className={primaryButtonStyles("black", cssClasses)}
         aria-label={ariaLabel}
         disabled={disabled}
         onClick={onClick}
@@ -72,7 +63,7 @@ const Button = ({
     return (
       <button
         type="button"
-        className={`text-paragraph min-[800px]:px-2.5 pt-[10px] pb-2 rounded desktopSmall:hover:opacity-80 desktopSmall:rounded-none desktop:hover:cursor-pointer ${cssClasses}`}
+        className={defaultButtonStyles(cssClasses)}
         onClick={onClick}
         aria-label={ariaLabel}
       >
