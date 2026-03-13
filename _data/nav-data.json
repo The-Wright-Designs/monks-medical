@@ -1,7 +1,9 @@
 [
   { "title": "Home", "link": "/" },
   { "title": "Services", "link": "/#services" },
-  { "title": "Drip Menu", "link": "/drips" },
+  { "title": "Advanced", "link": "/advanced" },
+  { "title": "About Us", "link": "/about" },
+  { "title": "Meet The Team", "link": "/about#meet-the-team" },
   { "title": "Blog", "link": "/blog" },
   { "title": "Contact", "link": "/#contact" }
 ]

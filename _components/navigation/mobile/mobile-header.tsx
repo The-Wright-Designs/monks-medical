@@ -23,7 +23,7 @@ const MobileHeader = () => {
   }, [showMenuToggle]);
 
   return (
-    <header className="desktop:hidden">
+    <header className="sticky top-0 z-50 desktop:hidden">
       <div
         className={classNames(
           "flex justify-between px-7 py-6 border-b-4 border-brown drop-shadow-default bg-white bg-cover bg-center",

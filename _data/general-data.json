@@ -31,40 +31,57 @@
         {
           "image": "/assets/icons/primary-care-services.png",
           "title": "Primary Care Services",
-          "paragraph": "I offer primary care services to patients of all ages, including routine check-ups, preventive care, and management of acute and chronic medical conditions. Whether you require a routine health assessment, vaccinations, or treatment for common illnesses such as colds, flu, or infections, I am here to provide compassionate and expert care."
+          "paragraph": "We offer primary care services to patients of all ages, including routine check-ups, preventive care, and management of acute and chronic medical conditions. Whether you require a routine health assessment, vaccinations, or treatment for common illnesses such as colds, flu, or infections, our team is here to provide compassionate and expert care."
         },
         {
           "image": "/assets/icons/chronic-disease-management.png",
           "title": "Chronic Disease Management",
-          "paragraph": "For patients living with chronic medical conditions such as diabetes, hypertension, asthma, or heart disease, I offer comprehensive management plans tailored to individual needs. By emphasizing patient education, lifestyle modifications, and appropriate medical interventions, I aim to optimize disease control and improve quality of life."
+          "paragraph": "For patients living with chronic medical conditions such as diabetes, hypertension, asthma, or heart disease, we offer comprehensive management plans tailored to individual needs. By emphasising patient education, lifestyle modifications, and appropriate medical interventions, we aim to optimise disease control and improve quality of life."
         },
         {
           "image": "/assets/icons/sports-medicine.png",
           "title": "Sports Medicine",
-          "paragraph": "With a passion for sports and exercise medicine, I offer specialized services to athletes and fitness enthusiasts. Whether you're dealing with sports injuries, musculoskeletal pain, or seeking guidance on performance optimization, I provide evidence-based treatment and personalized advice to help you stay active and healthy."
+          "paragraph": "With a shared passion for sports and exercise medicine, we offer specialised services to athletes and fitness enthusiasts. Whether you're dealing with sports injuries, musculoskeletal pain, or seeking guidance on performance optimisation, we provide evidence-based treatment and personalised advice to help you stay active and healthy."
         },
         {
           "image": "/assets/icons/paediatric-care.png",
           "title": "Paediatric Care",
-          "paragraph": "I provide comprehensive paediatric care for infants, children, and adolescents, focusing on preventive health, developmental milestones, and timely immunizations. Whether your child needs a well-baby check-up, vaccinations, or treatment for common childhood illnesses, I am dedicated to providing gentle and compassionate care to support their growth and development."
+          "paragraph": "We provide comprehensive paediatric care for infants, children, and adolescents, focusing on preventive health, developmental milestones, and timely immunisations. Whether your child needs a well-baby check-up, vaccinations, or treatment for common childhood illnesses, our team is dedicated to providing gentle and compassionate care to support their growth and development."
+        }
+      ],
+      "advanced": [
+        {
+          "title": "MedWave photobiomodulation therapy (red light therapy)",
+          "link": "/assets/brochures/MedWave_Client_Brochure.pdf"
+        },
+        {
+          "title": "Intravenous nutrient therapy",
+          "link": "/advanced#intravenous-nutrient-therapy"
+        },
+        {
+          "title": "Personalised peptide protocols",
+          "link": "/advanced#personalised-peptide-protocols"
+        },
+        {
+          "title": "Metabolic and performance optimisation programmes"
         }
       ],
       "additional": [
         {
           "title": "Nutritional Counselling",
-          "paragraph": "I offer nutritional counselling and guidance to help patients achieve their health and wellness goals. Whether you're looking to manage your weight, improve your diet, or address specific nutritional concerns, I provide practical advice and support to help you make sustainable lifestyle changes."
+          "paragraph": "We offer nutritional counselling and guidance to help patients achieve their health and wellness goals. Whether you're looking to manage your weight, improve your diet, or address specific nutritional concerns, we provide practical advice and support to help you make sustainable lifestyle changes."
         },
         {
           "title": "Mental Health Support",
-          "paragraph": "I understand the importance of mental health in overall well-being, and I offer compassionate support and evidence-based interventions for patients dealing with stress, anxiety, depression, or other mental health concerns. Through counselling, medication management, and referral to mental health specialists, I am committed to helping you achieve emotional wellness."
+          "paragraph": "We understand the importance of mental health in overall well-being, and we offer compassionate support and evidence-based interventions for patients dealing with stress, anxiety, depression, or other mental health concerns. Through counselling, medication management, and referral to mental health specialists, we are committed to helping you achieve emotional wellness."
         },
         {
           "title": "Men’s Health",
-          "paragraph": "Men's health is an important aspect of my practice, and I offer services tailored to address the unique health concerns of male patients. From prostate screenings to testosterone replacement therapy, I provide personalized care to support men in maintaining their health and vitality at every stage of life."
+          "paragraph": "Men's health is an important aspect of our practice, and we offer services tailored to address the unique health concerns of male patients. From prostate screenings to testosterone replacement therapy, we provide personalized care to support men in maintaining their health and vitality at every stage of life."
         },
         {
           "title": "Unique Services",
-          "paragraph": "At Monks Medical, we offer a few different services that set us apart. We have a point-of-care blood machine capable of conducting CRP, influenza, and COVID swabs in real-time tests, enabling quick and accurate diagnosis. Additionally, I am certified to perform point-of-care ultrasound examinations using a Butterfly iQ handheld ultrasound machine, enhancing our diagnostic capabilities and enabling immediate assessment and management of various conditions."
+          "paragraph": "At Monks Medical, we offer a few different services that set us apart. We have a point-of-care blood machine capable of conducting CRP, influenza, and COVID swabs in real-time tests, enabling quick and accurate diagnosis. Additionally, our team is certified to perform point-of-care ultrasound examinations using a Butterfly iQ handheld ultrasound machine, enhancing our diagnostic capabilities and enabling immediate assessment and management of various conditions."
         }
       ]
     },

@@ -119,27 +119,19 @@
     @apply bg-white/90 text-black rounded text-paragraph placeholder-black/75 border border-black/25 italic px-2 py-2 focus:bg-white focus:placeholder-black focus:not-italic focus:text-black
   }
 
-  .triangle-small {
-    width: 0;
-    height: 0;
-    border-top: 8px solid transparent;
-    border-bottom: 8px solid transparent;
-    border-left: 16px solid #A5996D;
-  }
-
   .triangle-right {
     width: 0;
     height: 0;
-    border-top: 19px solid transparent;
-    border-bottom: 19px solid transparent;
+    border-top: 21px solid transparent;
+    border-bottom: 21px solid transparent;
     border-left: 25px solid #DDC3A0;
   }
 
   .triangle-right-large {
     width: 0;
     height: 0;
-    border-top: 29px solid transparent;
-    border-bottom: 29px solid transparent;
+    border-top: 33px solid transparent;
+    border-bottom: 33px solid transparent;
     border-left: 25px solid #DDC3A0;
   }
 
