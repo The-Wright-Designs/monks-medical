@@ -16,7 +16,7 @@ const AdvancedServicesComponent = () => {
     <div className="flex flex-col gap-10 items-start w-full desktop:flex-row">
       <div className="hidden desktop:block desktop:flex-1 self-stretch overflow-hidden">
         <Image
-          src="/assets/images/services/advanced-services-monks-medical.jpg"
+          src="/assets/images/home-page/services/advanced-services-monks-medical.jpg"
           alt="Advanced Services - Monks Medical by Dr Kyle Rorke | Plettenberg Bay"
           width={600}
           height={600}

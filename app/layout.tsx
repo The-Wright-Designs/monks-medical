@@ -37,9 +37,7 @@ export default function RootLayout({
       <body>
         <RecaptchaProvider>
           <Header />
-          <div className="max-w-[1100px] mx-7 min-[1156px]:mx-auto">
-            {children}
-          </div>
+          {children}
           <Footer />
         </RecaptchaProvider>
       </body>

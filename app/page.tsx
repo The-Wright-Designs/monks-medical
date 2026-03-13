@@ -7,10 +7,12 @@ export default function Home() {
   return (
     <>
       <HeroComponent />
-      <AboutComponent />
-      <div id="services" className=" desktop:-translate-y-20"></div>
-      <ServicesComponent />
-      <ContactComponent />
+      <div className="max-w-[1100px] mx-7 min-[1156px]:mx-auto">
+        <AboutComponent />
+        <div id="services" className="scroll-mt-20" />
+        <ServicesComponent />
+        <ContactComponent />
+      </div>
     </>
   );
 }

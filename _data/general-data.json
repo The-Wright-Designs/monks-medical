@@ -1,4 +1,18 @@
 {
+  "aboutPage": {
+    "paragraphs": [
+      "Monks Medical is a collaborative healthcare practice offering comprehensive general medical services alongside advanced preventative and performance-based therapies.",
+      "The practice provides acute care, chronic disease management, pregnancy monitoring, childhood vaccinations, diagnostic ultrasound services, injury rehabilitation and optimisation programmes within a single coordinated environment.",
+      "By integrating physiotherapy, ultrasound diagnostics, nursing services and advanced therapeutic modalities, Monks Medical delivers continuity of care while maintaining the standards of a trusted family general practice.",
+      "Our mission is to provide personalised, evidence-based care that supports patients at every stage of life — from routine consultations to performance optimisation and long-term preventative health strategies."
+    ],
+    "heroImage": "/assets/images/about-us-page/monks-medical-about-us-page-4.jpg",
+    "images": [
+      "/assets/images/about-us-page/monks-medical-about-us-page-3.jpg",
+      "/assets/images/about-us-page/monks-medical-about-us-page-2.jpg",
+      "/assets/images/about-us-page/monks-medical-about-us-page-1.jpg"
+    ]
+  },
   "slider": [
     "/assets/images/monks-medical-61.jpg",
     "/assets/images/monks-medical-8.jpg",
@@ -15,11 +29,11 @@
   ],
   "homePage": {
     "about": {
-      "teamImage": "/assets/images/about/monks-medical-team.jpg",
+      "teamImage": "/assets/images/home-page/about/monks-medical-team.jpg",
       "images": [
-        "/assets/images/about/about-image-1.png",
-        "/assets/images/about/about-image-2.png",
-        "/assets/images/about/about-image-3.jpg"
+        "/assets/images/home-page/about/about-image-1.png",
+        "/assets/images/home-page/about/about-image-2.png",
+        "/assets/images/home-page/about/about-image-3.jpg"
       ],
       "paragraphs": [
         "Monks Medical is a modern, patient-centred general practice in Plettenberg Bay led by Dr Kyle Rorke. The practice is built on personalised, thorough medical care that integrates conventional general practice with a collaborative, multidisciplinary healthcare model.",

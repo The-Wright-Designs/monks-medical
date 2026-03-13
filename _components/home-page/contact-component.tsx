@@ -21,7 +21,7 @@ const ContactComponent = () => {
 
   return (
     <section className="pt-20">
-      <div className="grid gap-20 border-b border-black/25 pb-15 tablet:grid-cols-[1fr_225px] tablet:gap-10 min-[800px]:grid-cols-1">
+      <div className="grid gap-20 border-b border-black/25 pb-15 tablet:grid-cols-1 tablet:gap-10">
         <div className="grid gap-10 min-[800px]:grid-cols-2">
           <Image
             src="/assets/images/monks-medical-41.jpg"
@@ -48,8 +48,7 @@ const ContactComponent = () => {
           />
         </div>
       </div>
-      <div id="contact" className=" desktop:-translate-y-20"></div>
-      <div className="grid gap-20 pt-20">
+      <div className="grid gap-20 pt-20 scroll-mt-20" id="contact">
         <h2>Get In Touch</h2>
         <div className="relative">
           <ul className="grid gap-10 tablet:gap-7 desktop:gap-5">
@@ -116,7 +115,7 @@ const ContactComponent = () => {
             </div>
           }
         >
-          <LazyContactMap cssClasses="w-full h-[400px] phone:h-[450px] tablet:h-[500px] min-[800px]:h-full min-h-[250px] min-[800px]:order-2" />
+          <LazyContactMap cssClasses="w-full h-[400px] phone:h-[450px] tablet:h-[500px] desktop:h-full min-h-[250px] min-[800px]:order-2" />
         </Suspense>
         <ContactForm />
       </div>
