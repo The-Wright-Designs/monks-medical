@@ -3,6 +3,7 @@ interface EmailTemplateParams {
   email: string;
   message: string;
   phone?: string;
+  bookWith?: string;
 }
 
 const escapeHtml = (str: string | undefined): string => {
@@ -19,6 +20,7 @@ export const emailTemplateHtml = ({
   email,
   message,
   phone,
+  bookWith,
 }: EmailTemplateParams): string => {
   return `<html lang="en">
   <head>
@@ -30,7 +32,7 @@ export const emailTemplateHtml = ({
     <table style="width: 100%; background-color: #A77655;">
       <tr>
         <td>
-          <h1 style="padding: 1rem; color:#fff;">Monk's Medical</h1>
+          <h1 style="padding: 1rem; color:#fff;">Monk's Medical${bookWith ? ` <span style="font-weight: 200; font-style: italic;">(${bookWith})</span>` : ""}</h1>
         </td>
       </tr>
     </table>
@@ -39,6 +41,12 @@ export const emailTemplateHtml = ({
       <tr>
         <td>
           <h3 style="font-size: 1.25rem">Website form submission</h3>
+          ${
+            bookWith &&
+            `<p style="font-size: 1rem; margin-top: 1rem; font-weight: 500;">
+                Enquiry for: <span style="font-weight: 200; font-style: italic;">${escapeHtml(bookWith)}</span>
+              </p>`
+          }
           <p style="font-size: 1rem; margin-top: 1rem; font-weight: 500;">
             Name: <span style="font-weight: 200; font-style: italic;">${escapeHtml(name)}</span>
           </p>

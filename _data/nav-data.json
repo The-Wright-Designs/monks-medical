@@ -3,7 +3,7 @@
   { "title": "Services", "link": "/#services" },
   { "title": "Advanced", "link": "/advanced" },
   { "title": "About Us", "link": "/about-us" },
-  { "title": "Meet The Team", "link": "/about#meet-the-team" },
+  { "title": "Meet The Team", "link": "/about-us#meet-the-team" },
   { "title": "Blog", "link": "/blog" },
   { "title": "Contact", "link": "/#contact" }
 ]

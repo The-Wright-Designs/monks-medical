@@ -67,7 +67,7 @@ const ContactComponent = () => {
           <div className="flex gap-10 desktop:gap-5 mt-10 desktop:mt-5">
             <Link
               href={facebook}
-              className="p-2 -m-2 desktop:p-0 desktop:m-0 hover:desktop:opacity-9 ease-in-out duration-300"
+              className="p-2 -m-2 desktop:p-0 desktop:m-0 hover:desktop:opacity-90 ease-in-out duration-300"
               target="_blank"
             >
               <Image
@@ -117,7 +117,9 @@ const ContactComponent = () => {
         >
           <LazyContactMap cssClasses="w-full h-[400px] phone:h-[450px] tablet:h-[500px] desktop:h-full min-h-[250px] min-[800px]:order-2" />
         </Suspense>
-        <ContactForm />
+        <Suspense fallback={null}>
+          <ContactForm />
+        </Suspense>
       </div>
     </section>
   );

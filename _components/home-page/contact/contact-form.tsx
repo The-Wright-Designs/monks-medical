@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 
 import Link from "next/link";
@@ -16,6 +17,9 @@ const ContactForm = ({ cssClasses }: Props) => {
   const { executeRecaptcha } = useGoogleReCaptcha();
   const [showEmailSubmitted, setShowEmailSubmitted] = useState(false);
   const [submitError, setSubmitError] = useState(false);
+  const [bookWith, setBookWith] = useState(
+    useSearchParams().get("bookWith") ?? "",
+  );
 
   useEffect(() => {
     if (showEmailSubmitted) {
@@ -27,19 +31,21 @@ const ContactForm = ({ cssClasses }: Props) => {
   }, [showEmailSubmitted]);
 
   return (
-    <div>
+    <div id="contact-form" className="scroll-mt-32  ">
       {!showEmailSubmitted && (
         <p className="mb-5 italic min-[800px]:text-left">
           Please fill out the form below and we will be in touch ASAP...
         </p>
       )}
       {showEmailSubmitted ? (
-        <>
-          <div id="email-submitted"></div>
-          <p className="italic">
+        <div
+          className="scroll-mt-20 bg-brown grid place-items-center px-7 -mx-7 py-10 min-h-[300px] min-[800px]:m-0 min-[800px]:p-7 min-[800px]:rounded-xl"
+          id="email-submitted"
+        >
+          <p className="italic text-subheading text-white text-center">
             Your email has been sent, we will be in touch soon.
           </p>
-        </>
+        </div>
       ) : submitError ? (
         <p className="italic text-error text-subheading">
           Something went wrong sending your message. Please try again or contact
@@ -74,10 +80,37 @@ const ContactForm = ({ cssClasses }: Props) => {
                 setSubmitError(true);
               }
             }}
-            className="flex flex-col gap-8"
+            className="flex flex-col gap-5"
           >
             <input type="hidden" name="honey" className="hidden" />
-            <label htmlFor="fullName" className="flex flex-col gap-2">
+            <label htmlFor="bookWith" className="flex flex-col gap-1">
+              Book with:
+              <select
+                id="bookWith"
+                name="bookWith"
+                value={bookWith}
+                onChange={(e) => setBookWith(e.target.value)}
+              >
+                <option value="">General enquiry</option>
+                <option value="Dr. Kyle Rorke - GP">Dr. Kyle Rorke - GP</option>
+                <option value="Sr. Heilet Van Endt - Midwife">
+                  Sr. Heilet Van Endt - Midwife
+                </option>
+                <option value="Andrew Jansen Van Rensburg - Physiotherapist">
+                  Andrew Jansen Van Rensburg - Physiotherapist
+                </option>
+                <option value="Sally Morris - Sonographer">
+                  Sally Morris - Sonographer
+                </option>
+                <option value="Jana Van Zyl - Physiotherapist">
+                  Jana Van Zyl - Physiotherapist
+                </option>
+                <option value="Halina Olivier - Medwave Therapist">
+                  Halina Olivier - Medwave Therapist
+                </option>
+              </select>
+            </label>
+            <label htmlFor="fullName" className="flex flex-col gap-1">
               Name:
               <input
                 type="text"
@@ -88,7 +121,7 @@ const ContactForm = ({ cssClasses }: Props) => {
                 autoComplete="name"
               />
             </label>
-            <label htmlFor="phoneNumber" className="flex flex-col gap-2">
+            <label htmlFor="phoneNumber" className="flex flex-col gap-1">
               Phone:
               <input
                 type="tel"
@@ -98,7 +131,7 @@ const ContactForm = ({ cssClasses }: Props) => {
                 autoComplete="tel"
               />
             </label>
-            <label htmlFor="emailAddress" className="flex flex-col gap-2">
+            <label htmlFor="emailAddress" className="flex flex-col gap-1">
               Email:
               <input
                 type="email"
@@ -109,7 +142,7 @@ const ContactForm = ({ cssClasses }: Props) => {
                 autoComplete="email"
               />
             </label>
-            <label htmlFor="userMessage" className="flex flex-col gap-2">
+            <label htmlFor="userMessage" className="flex flex-col gap-1">
               Message:
               <textarea
                 id="userMessage"

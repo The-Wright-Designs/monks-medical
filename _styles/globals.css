@@ -115,8 +115,8 @@
     @apply text-white text-paragraph
   }
 
-  input, textarea {
-    @apply bg-white/90 text-black rounded text-paragraph placeholder-black/75 border border-black/25 italic px-2 py-2 focus:bg-white focus:placeholder-black focus:not-italic focus:text-black
+  input, textarea, select {
+    @apply bg-white/95 text-black rounded text-paragraph placeholder-black/75 border border-black/25 italic px-2 py-2 focus:bg-white focus:placeholder-black focus:not-italic focus:text-black
   }
 
   .triangle-right {

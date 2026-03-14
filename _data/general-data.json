@@ -2,6 +2,8 @@
   "team": [
     {
       "name": "Dr. Kyle Rorke",
+      "jobTitle": "General Practitioner",
+      "bookWithValue": "Dr. Kyle Rorke - GP",
       "imageUrl": "/assets/images/about-us-page/team/dr-kyle-rorke-monks-medical.jpg",
       "bio": [
         "Dr Kyle Rorke is a general practitioner with a strong commitment to personalised and preventative medicine. He leads Monks Medical with the vision of providing comprehensive, coordinated healthcare within a modern, collaborative clinical environment.",
@@ -11,6 +13,8 @@
     },
     {
       "name": "Sr. Heilet Van Endt",
+      "jobTitle": "Midwife",
+      "bookWithValue": "Sr. Heilet Van Endt - Midwife",
       "imageUrl": "/assets/images/about-us-page/team/heilet-monks-medical.jpg",
       "bio": [
         "I am a registered nurse and midwife with a BCur degree, specialising in midwifery, infection control, and hospital management. I run my own practice where I offer comprehensive care for pregnancies, newborns, contraception, and routine women's health services such as Pap smears. I also provide well-baby clinic services, including growth monitoring and paediatric vaccinations, supporting parents through their child's early developmental stages with evidence-based, compassionate care. My focus is on creating a safe, professional, and welcoming environment for every patient.",
@@ -19,10 +23,12 @@
     },
     {
       "name": "Andrew Jansen Van Rensburg",
+      "jobTitle": "Physiotherapist",
+      "bookWithValue": "Andrew Jansen Van Rensburg - Physiotherapist",
       "imageUrl": "/assets/images/about-us-page/team/andrew-monks-medical.jpg",
       "bio": [
         "Bsc Physiotherapy (Hons), Internationally Certified Competitive Triathlon Coach (ITU), Pilates Conditioning (Pretoria).",
-        "Andrew was the consultant Physiotherapist for the South African National Triathlon Team from 2008 to 2012, and consults for other professional sporting teams in a rehabilitation and performance enhancement role. He is internationally published on articles regarding core strength and overuse injuries. He has been a Clinical Pilates instructor since 2001 and has modified his approach to great effect in the rehabilitation and performance fields.",
+        "Andrew was the consultant Physiotherapist for the South African National Triathlon Team from 2008 to 2012, and consults for other professional sporting teams in a rehabilitation and performance enhancement role. He is internationally published on articles regarding core strength and overuse injuries. He has been a Clinical Pilates instructor since 2001 and has modified his approach tfo great effect in the rehabilitation and performance fields.",
         "He has been instrumental in advancing the Clinical Pilates field by using Real Time Ultrasound to assess the efficacy of Transversus Abdominis and Multifidus contractions. The modification of core strength programs by making the programs more functional, and clinically objectively measurable has shown a significant improvement in the long-term rehabilitation rates of his patients.",
         "Andrew is an ITU (International Triathlon Union) Level 2 certified competitive Triathlon Coach and Running Coach, coaching and guiding athletes to all distances of races from Sprint distance Triathlons to Ironman, and from 10km Road running races up to Comrades Marathon. A particular niche of Andrews training is Ultra Distance Trail and road running, having an acute understanding of the intricacies needed to work on in order to succeed in these tough events.",
         "Andrew was the head of the Triathlon South Africa Medical Commission from 2006 to 2016, and ran Triathlon/Duathlon clinics for underprivileged children affected by HIV/Aids at Noahs Ark in Diepsloot, Soweto.",
@@ -31,7 +37,9 @@
       ]
     },
     {
-      "name": "Sally",
+      "name": "Sally Morris",
+      "jobTitle": "Sonographer",
+      "bookWithValue": "Sally Morris - Sonographer",
       "imageUrl": "/assets/images/about-us-page/team/sally-monks-medical.jpg",
       "bio": [
         "Lorem ipsum dolor sit amet consectetur. Nibh viverra bibendum ullamcorper ut justo nisi neque sagittis montes. Sed eu amet diam in nam egestas. Id ut neque tincidunt penatibus et. Viverra ultrices ornare volutpat mi sed cras amet aliquet. Sed est adipiscing ultrices mattis laoreet pellentesque nunc lobortis tincidunt. Ut in imperdiet urna nunc pulvinar bibendum maecenas. Tellus eget cursus nisi praesent justo.",
@@ -40,6 +48,8 @@
     },
     {
       "name": "Jana Van Zyl",
+      "jobTitle": "Physiotherapist",
+      "bookWithValue": "Jana Van Zyl - Physiotherapist",
       "imageUrl": "/assets/images/about-us-page/team/yana-monks-medical.jpg",
       "bio": [
         "Jana graduated from the University of the Western Cape with a Bachelor of Science in Physiotherapy in 2019. She then went on to complete her Community Service year in 2020 at Tygerberg Hospital, where she broadened her knowledge with orthopaedic conditions and post operative care.",
@@ -47,7 +57,9 @@
       ]
     },
     {
-      "name": "Halina",
+      "name": "Halina Olivier",
+      "jobTitle": "Medwave Therapist",
+      "bookWithValue": "Halina Olivier - Medwave Therapist",
       "imageUrl": "/assets/images/about-us-page/team/halina-monks-medical.jpg",
       "bio": [
         "Lorem ipsum dolor sit amet consectetur. Nibh viverra bibendum ullamcorper ut justo nisi neque sagittis montes. Sed eu amet diam in nam egestas. Id ut neque tincidunt penatibus et. Viverra ultrices ornare volutpat mi sed cras amet aliquet. Sed est adipiscing ultrices mattis laoreet pellentesque nunc lobortis tincidunt. Ut in imperdiet urna nunc pulvinar bibendum maecenas. Tellus eget cursus nisi praesent justo.",

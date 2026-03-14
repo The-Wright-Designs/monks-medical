@@ -7,13 +7,15 @@ const MeetTheTeamComponent = () => {
   const { team } = data;
 
   return (
-    <section className="flex flex-col gap-15">
+    <section className="flex flex-col gap-15 scroll-mt-32" id="meet-the-team">
       <h2>Meet The Team</h2>
       <div className="grid gap-10 tablet:grid-cols-2 desktop:grid-cols-1">
         {team.map((member, index) => (
           <Fragment key={member.name}>
             <MeetTheTeamItem
               name={member.name}
+              jobTitle={member.jobTitle}
+              bookWithValue={member.bookWithValue}
               bio={member.bio}
               imageUrl={member.imageUrl}
               imageLeft={index % 2 !== 0}

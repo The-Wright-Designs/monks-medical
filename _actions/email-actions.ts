@@ -25,12 +25,14 @@ export async function sendEmail(
     const phone = formData.get("tel") as string;
     const email = formData.get("email") as string;
     const message = formData.get("message") as string;
+    const bookWith = formData.get("bookWith") as string;
 
     const emailHtmlContent = emailTemplateHtml({
       name,
       phone,
       email,
       message,
+      bookWith,
     });
 
     const transporter = nodemailer.createTransport({
@@ -46,7 +48,7 @@ export async function sendEmail(
 
     const mailOptions = {
       from: process.env.SMTP_USER,
-      to: process.env.SMTP_SEND_TO,
+      to: bookWith.includes("Heilet") ? process.env.SMTP_SEND_TO_HEILET : process.env.SMTP_SEND_TO,
       subject: "Website form submission - Monk's Medical",
       replyTo: email,
       html: emailHtmlContent,

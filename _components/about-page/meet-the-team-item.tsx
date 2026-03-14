@@ -11,12 +11,16 @@ interface Props {
   name: string;
   bio: string[];
   imageUrl: string;
+  jobTitle: string;
+  bookWithValue: string;
   imageLeft?: boolean;
   cssClasses?: string;
 }
 
 const MeetTheTeamItem = ({
   name,
+  jobTitle,
+  bookWithValue,
   bio,
   imageUrl,
   imageLeft,
@@ -27,7 +31,7 @@ const MeetTheTeamItem = ({
   const isLong = totalChars > 950;
 
   return (
-    <div
+    <article
       className={classNames(
         "flex flex-col gap-10 desktop:flex-row desktop:items-start",
         cssClasses,
@@ -40,7 +44,12 @@ const MeetTheTeamItem = ({
         )}
       >
         <div className="flex flex-col gap-10">
-          <h3>{name}</h3>
+          <div className="flex flex-col gap-1">
+            <h3>{name}</h3>
+            <h4 className="px-2 py-1 font-light text-[13px] bg-brown rounded text-white self-start">
+              {jobTitle}
+            </h4>
+          </div>
           <div className="relative aspect-[333/439] w-full desktop:hidden">
             <Image src={imageUrl} alt={name} fill />
           </div>
@@ -72,7 +81,7 @@ const MeetTheTeamItem = ({
         </div>
         <Button
           backgroundColor={!imageLeft ? "green" : "light brown"}
-          link="#"
+          link={`/?bookWith=${encodeURIComponent(bookWithValue)}#contact-form`}
           ariaLabel="Book a consultation"
           cssClasses="desktop:self-start"
         >
@@ -87,7 +96,7 @@ const MeetTheTeamItem = ({
       >
         <Image src={imageUrl} alt={name} fill />
       </div>
-    </div>
+    </article>
   );
 };
 

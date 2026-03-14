@@ -6,7 +6,7 @@ const { paragraphs, heroImage, images } = data.aboutPage;
 
 const AboutUsComponent = () => {
   return (
-    <div className={classNames("flex flex-col gap-15")}>
+    <main className={classNames("flex flex-col gap-15")}>
       <h1>About Us</h1>
 
       <div className="grid tablet:grid-cols-2 gap-10 tablet:items-center desktop:grid-cols-[1fr_271px]">
@@ -33,7 +33,7 @@ const AboutUsComponent = () => {
           </div>
         ))}
       </div>
-    </div>
+    </main>
   );
 };
 

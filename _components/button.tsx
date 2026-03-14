@@ -37,7 +37,10 @@ const Button = ({
 
   if (!additionalServices && link) {
     return (
-      <Link href={link} className={primaryButtonStyles(backgroundColor, cssClasses)}>
+      <Link
+        href={link}
+        className={primaryButtonStyles(backgroundColor, cssClasses)}
+      >
         {children}
       </Link>
     );
@@ -51,7 +54,7 @@ const Button = ({
         onClick={onClick}
       >
         {pending ? (
-          <div className="grid place-items-center">
+          <div className="grid place-items-center py-0.5">
             <div className="spinner"></div>
           </div>
         ) : (
