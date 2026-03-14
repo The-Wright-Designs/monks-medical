@@ -13,6 +13,7 @@ interface Props {
   imageUrl: string;
   jobTitle: string;
   bookWithValue: string;
+  id?: string;
   imageLeft?: boolean;
   cssClasses?: string;
 }
@@ -23,6 +24,7 @@ const MeetTheTeamItem = ({
   bookWithValue,
   bio,
   imageUrl,
+  id,
   imageLeft,
   cssClasses,
 }: Props) => {
@@ -32,8 +34,9 @@ const MeetTheTeamItem = ({
 
   return (
     <article
+      id={id}
       className={classNames(
-        "flex flex-col gap-10 desktop:flex-row desktop:items-start",
+        "flex flex-col gap-10 desktop:flex-row desktop:items-start scroll-mt-28 desktop:scroll-mt-36",
         cssClasses,
       )}
     >
@@ -69,7 +72,7 @@ const MeetTheTeamItem = ({
           {isLong && (
             <Link
               href="#"
-              className="text-link -mt-5 desktop:hover:opacity-85 ease-in-out duration-300"
+              className="text-link font-light -mt-5 desktop:hover:opacity-85 ease-in-out duration-300"
               onClick={(e) => {
                 e.preventDefault();
                 setExpanded(!expanded);

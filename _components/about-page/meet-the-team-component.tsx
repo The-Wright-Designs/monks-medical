@@ -18,6 +18,10 @@ const MeetTheTeamComponent = () => {
               bookWithValue={member.bookWithValue}
               bio={member.bio}
               imageUrl={member.imageUrl}
+              id={member.name
+                .toLowerCase()
+                .replace(/\./g, "")
+                .replace(/\s+/g, "-")}
               imageLeft={index % 2 !== 0}
             />
             {index < team.length - 1 && (

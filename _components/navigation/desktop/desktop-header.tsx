@@ -3,6 +3,7 @@ import Link from "next/link";
 import Logo from "../../logo";
 
 import data from "@/_data/nav-data.json";
+import classNames from "classnames";
 
 const DesktopHeader = () => {
   return (
@@ -10,15 +11,35 @@ const DesktopHeader = () => {
       <div className="flex w-full justify-between mx-auto max-w-[1100px] px-8 py-6 desktop:bg-[url('https://ik.imagekit.io/thewrightdesigns/tr:q-55,w-1150/monks-medical-54.jpg')] bg-cover bg-center relative">
         <div className=" bg-gradient-to-r from-white to-transparent w-8 absolute left-0 top-0 h-full"></div>
         <Logo large />
-        <ul className="flex gap-3 items-end -mb-2">
-          {data.map(({ title, link }, index) => (
-            <li key={index}>
+        <ul className="flex gap-3 items-end -mb-1.5">
+          {data.map(({ title, link, submenu }, index) => (
+            <li key={index} className={submenu ? "relative group" : undefined}>
               <Link
                 href={link}
-                className="text-paragraph pb-1 -mb-[3px] hover:border-b-[3px] border-khaki ease-in-out duration-[50ms] delay-75"
+                className={classNames(
+                  "text-paragraph pb-1 -mb-[3px] ease-in-out duration-[50ms] delay-75",
+                  !submenu ? "hover:border-b-[2px] border-khaki" : undefined,
+                )}
               >
                 {title}
               </Link>
+              {submenu && (
+                <ul className="flex flex-col absolute top-6.5 left-0 bg-white min-w-max z-50 py-2 overflow-hidden max-h-0 group-hover:max-h-96 transition-[max-height] duration-500 ease-in-out delay-75 rounded-b-[8px]">
+                  {submenu.map((item, i) => (
+                    <li key={i}>
+                      <Link
+                        href={item.link}
+                        className="text-paragraph block px-4 py-1.5 desktop:hover:bg-lightBrown/30 ease-in-out duration-300"
+                      >
+                        {item.jobTitle}
+                        {item.physioName && (
+                          <span className="italic"> - {item.physioName}</span>
+                        )}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </li>
           ))}
         </ul>

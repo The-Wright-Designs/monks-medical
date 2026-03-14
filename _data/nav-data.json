@@ -3,7 +3,26 @@
   { "title": "Services", "link": "/#services" },
   { "title": "Advanced", "link": "/advanced" },
   { "title": "About Us", "link": "/about-us" },
-  { "title": "Meet The Team", "link": "/about-us#meet-the-team" },
+  {
+    "title": "Meet The Team",
+    "link": "/about-us#meet-the-team",
+    "submenu": [
+      { "jobTitle": "General Practitioner", "link": "/about-us#dr-kyle-rorke" },
+      { "jobTitle": "Midwife", "link": "/about-us#sr-heilet-van-endt" },
+      {
+        "jobTitle": "Physiotherapist",
+        "physioName": "Andrew",
+        "link": "/about-us#andrew-jansen-van-rensburg"
+      },
+      {
+        "jobTitle": "Physiotherapist",
+        "physioName": "Jana",
+        "link": "/about-us#jana-van-zyl"
+      },
+      { "jobTitle": "Sonographer", "link": "/about-us#sally-morris" },
+      { "jobTitle": "Medwave Therapist", "link": "/about-us#halina-olivier" }
+    ]
+  },
   { "title": "Blog", "link": "/blog" },
   { "title": "Contact", "link": "/#contact" }
 ]
