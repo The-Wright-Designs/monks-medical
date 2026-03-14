@@ -175,26 +175,40 @@
       "instagram": "https://www.instagram.com/monksmedical"
     }
   },
-  "dripsPage": [
-    {
-      "image": "/assets/images/monks-medical-17.jpg",
-      "title": "Strengthen Your Body's Defences",
-      "paragraph": "Vitamin C: Enhances immune function Vitamin B Complex: Supports energy production and immune health Magnesium Sulphate (MGSO4): Essential for enzyme function and nerve transmission Zinc: Vital for immune system function G.A.C Formula (Glutamine, Arginine, Carnitine): Supports cellular health and immune function"
+  "advancedPage": {
+    "peptides": {
+      "faqs": [
+        {
+          "question": "Are peptides safe?",
+          "answer": "Safety depends on the specific peptide, dosing, and patient suitability. Careful assessment and monitoring are essential."
+        },
+        {
+          "question": "Are peptides approved medications?",
+          "answer": "Some peptides are approved for specific indications, while others are used in evolving areas of medical research. This is discussed transparently during consultation."
+        },
+        {
+          "question": "Do I need monitoring?",
+          "answer": "Yes. Follow-up and clinical review form part of any peptide protocol."
+        }
+      ],
+      "clinicalNote": "Peptide therapy is prescribed under medical supervision and only where clinically appropriate. Treatments are personalised and not universally suitable."
     },
-    {
-      "image": "/assets/images/monks-medical-38.jpg",
-      "title": "Detoxify and Rejuvenate Your Liver",
-      "paragraph": "Vitamin C: Supports liver detoxification pathways Vitamin B Complex: Aids in liver function and energy metabolism Magnesium Sulphate (MGSO4): Helps with detoxification and relaxation Zinc: Supports liver health and regeneration G.A.C Formula (Glutamine, Arginine, Carnitine): Promotes liver cell repair and detoxification Glutathione: Powerful antioxidant crucial for liver health Selenium: Supports liver enzyme function"
-    },
-    {
-      "image": "/assets/images/monks-medical-22.jpg",
-      "title": "Combat Oxidative Stress and Promote Cellular Health",
-      "paragraph": "Vitamin C: Potent antioxidant protecting cells from damage Vitamin B Complex: Supports energy production and antioxidant pathways Magnesium Sulphate (MGSO4): Helps relax muscles and supports antioxidant enzymes Zinc: Essential for antioxidant enzyme function G.A.C Formula (Glutamine, Arginine, Carnitine): Enhances cellular function and antioxidant capacity Glutathione: Master antioxidant crucial for detoxification and cellular defence Selenium: Supports antioxidant enzyme activity Alpha-Lipoic Acid (ALA): Regenerates other antioxidants and supports cellular energy production N-Acetylcysteine (NAC): Precursor to glutathione, aiding in detoxification and antioxidant support NeuroRevive Therapy"
-    },
-    {
-      "image": "/assets/images/monks-medical-30.jpg",
-      "title": "Restore Neurological Vitality and Cognitive Function",
-      "paragraph": "NAD+ (Nicotinamide Adenine Dinucleotide): Supports cellular energy production and DNA repair Vitamin C: Protects neurons from oxidative stress and supports neurotransmitter synthesis Vitamin B Complex: Essential for nerve function and neurotransmitter production Personalisation is available based on blood tests and genetic analysis to tailor micronutrients for optimal neurorecovery. Each infusion is meticulously crafted to address specific health needs and can be personalized for individual requirements based on thorough assessments"
+    "ivNutrientTherapy": {
+      "faqs": [
+        {
+          "question": "Is IV therapy safe?",
+          "answer": "When prescribed appropriately and administered by trained medical professionals, IV therapy is generally well tolerated. Suitability is assessed prior to treatment."
+        },
+        {
+          "question": "Do I need blood tests first?",
+          "answer": "In some cases, laboratory testing may be recommended to guide formulation or ensure safety."
+        },
+        {
+          "question": "How often can I receive IV therapy?",
+          "answer": "Frequency depends on clinical indication and individual response. This is discussed during consultation."
+        }
+      ],
+      "clinicalNote": "IV nutrient therapy at Monks Medical is delivered within a medical setting and is evidence-informed. It is not intended to diagnose, treat or replace essential medical therapy where indicated."
     }
-  ]
+  }
 }
