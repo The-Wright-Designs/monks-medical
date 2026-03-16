@@ -27,7 +27,7 @@ const AdvancedItem = ({
       })}
     >
       <div className="flex flex-col gap-5">
-        <h3 className="text-left">{title}</h3>
+        <h3 className="text-left break-words">{title}</h3>
         <div className={cssClasses}>{children}</div>
       </div>
       {imageUrl && (

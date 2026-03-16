@@ -24,14 +24,14 @@ const ContactComponent = () => {
       <div className="grid gap-20 border-b border-black/25 pb-15 tablet:grid-cols-1 tablet:gap-10">
         <div className="grid gap-10 min-[800px]:grid-cols-2">
           <Image
-            src="/assets/images/monks-medical-41.jpg"
+            src="/assets/images/home-page/contact/monks-medical-41.jpg"
             alt="Monks Medical"
             width={600}
             height={400}
             className="w-full h-auto aspect-video"
           />
           <Image
-            src="/assets/images/monks-medical-61.jpg"
+            src="/assets/images/home-page/contact/monks-medical-61.jpg"
             alt="Monks Medical"
             width={600}
             height={400}

@@ -1,7 +1,15 @@
 [
   { "title": "Home", "link": "/" },
   { "title": "Services", "link": "/#services" },
-  { "title": "Advanced", "link": "/advanced" },
+  {
+    "title": "Advanced",
+    "link": "/advanced",
+    "submenu": [
+      { "jobTitle": "IV Nutrient Therapy", "link": "/advanced#iv-nutrient-therapy" },
+      { "jobTitle": "Personalised Peptide Protocols", "link": "/advanced#personalised-peptide-protocols" },
+      { "jobTitle": "MedWave Therapy", "link": "/advanced#medwave" }
+    ]
+  },
   { "title": "About Us", "link": "/about-us" },
   {
     "title": "Meet The Team",

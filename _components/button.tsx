@@ -19,6 +19,7 @@ interface Props {
   disabled?: boolean;
   type?: "submit";
   ariaLabel: string;
+  target?: string;
 }
 
 const Button = ({
@@ -32,6 +33,7 @@ const Button = ({
   disabled,
   type,
   ariaLabel,
+  target = "_self",
 }: Props) => {
   const { pending } = useFormStatus();
 
@@ -40,6 +42,7 @@ const Button = ({
       <Link
         href={link}
         className={primaryButtonStyles(backgroundColor, cssClasses)}
+        target={target}
       >
         {children}
       </Link>

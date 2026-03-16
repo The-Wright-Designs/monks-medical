@@ -4,7 +4,9 @@ import data from "@/_data/general-data.json";
 import MeetTheTeamItem from "@/_components/about-page/meet-the-team-item";
 
 const MeetTheTeamComponent = () => {
-  const { team } = data;
+  const {
+    aboutPage: { team },
+  } = data;
 
   return (
     <section className="flex flex-col gap-15 scroll-mt-32" id="meet-the-team">

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -11,11 +11,16 @@ import data from "@/_data/nav-data.json";
 interface Props {
   onClick?: () => void;
   cssClasses?: string;
+  isOpen?: boolean;
 }
 
-const MobileMenuToggle = ({ onClick, cssClasses }: Props) => {
+const MobileMenuToggle = ({ onClick, cssClasses, isOpen }: Props) => {
   const currentRoute = usePathname();
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  useEffect(() => {
+    if (!isOpen) setOpenIndex(null);
+  }, [isOpen]);
 
   return (
     <nav className={cssClasses}>
@@ -43,22 +48,25 @@ const MobileMenuToggle = ({ onClick, cssClasses }: Props) => {
                     {openIndex === index ? "−" : "+"}
                   </span>
                 </button>
-                {openIndex === index && (
-                  <ul className="mt-2 flex flex-col items-start gap-1 pl-4">
-                    {submenu.map((item, i) => (
-                      <li key={i}>
-                        <Link
-                          href={item.link}
-                          className="text-[1rem] font-light block py-1 px-1 -mx-1"
-                          onClick={onClick}
-                        >
-                          {item.jobTitle}
-                          {item.physioName && ` - ${item.physioName}`}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                )}
+                <ul
+                  className={classNames(
+                    "flex flex-col items-start gap-1 pl-4 overflow-hidden transition-all delay-75 duration-300 ease-in-out",
+                    openIndex === index ? "max-h-[500px] mt-2" : "max-h-0",
+                  )}
+                >
+                  {submenu.map((item, i) => (
+                    <li key={i}>
+                      <Link
+                        href={item.link}
+                        className="text-[1rem] font-light block py-1 px-1 -mx-1"
+                        onClick={onClick}
+                      >
+                        {item.jobTitle}
+                        {item.physioName && ` - ${item.physioName}`}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
               </>
             ) : (
               <Link

@@ -69,7 +69,7 @@ const AdditionalServicesComponent = () => {
       </ul>
       <div className="hidden desktop:block">
         <Image
-          src="/assets/images/monks-medical-39.jpg"
+          src="/assets/images/home-page/services/monks-medical-39.jpg"
           alt="Monk's Medical by Dr Kyle Rorke - Additional Services"
           width={600}
           height={600}

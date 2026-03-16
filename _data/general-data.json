@@ -1,101 +1,18 @@
 {
-  "team": [
-    {
-      "name": "Dr. Kyle Rorke",
-      "jobTitle": "General Practitioner",
-      "bookWithValue": "Dr. Kyle Rorke - GP",
-      "imageUrl": "/assets/images/about-us-page/team/dr-kyle-rorke-monks-medical.jpg",
-      "bio": [
-        "Dr Kyle Rorke is a general practitioner with a strong commitment to personalised and preventative medicine. He leads Monks Medical with the vision of providing comprehensive, coordinated healthcare within a modern, collaborative clinical environment.",
-        "While maintaining the full scope of traditional GP services, Dr Rorke has developed particular expertise in metabolic health, performance optimisation and preventative care. His approach is grounded in clinical medicine while recognising the importance of lifestyle, movement, recovery and long-term disease prevention. He works closely with an integrated team of physiotherapists, a sonographer and a professional nurse to ensure patients receive coordinated, comprehensive care tailored to their individual needs.",
-        "Dr Rorke believes that medicine should extend beyond treating illness. His focus is on empowering patients with knowledge, implementing structured health strategies, and supporting sustainable long-term wellbeing."
-      ]
-    },
-    {
-      "name": "Sr. Heilet Van Endt",
-      "jobTitle": "Midwife",
-      "bookWithValue": "Sr. Heilet Van Endt - Midwife",
-      "imageUrl": "/assets/images/about-us-page/team/heilet-monks-medical.jpg",
-      "bio": [
-        "I am a registered nurse and midwife with a BCur degree, specialising in midwifery, infection control, and hospital management. I run my own practice where I offer comprehensive care for pregnancies, newborns, contraception, and routine women's health services such as Pap smears. I also provide well-baby clinic services, including growth monitoring and paediatric vaccinations, supporting parents through their child's early developmental stages with evidence-based, compassionate care. My focus is on creating a safe, professional, and welcoming environment for every patient.",
-        "Beyond my professional role, I am a wife and a mother of two, which gives me a deep appreciation for the realities of family life and parenthood. I enjoy running, reading, and playing classical music on the flute and piano — interests that reflect balance, discipline, and calm. These values shape the holistic and caring approach I bring to my practice and to the families I serve."
-      ]
-    },
-    {
-      "name": "Andrew Jansen Van Rensburg",
-      "jobTitle": "Physiotherapist",
-      "bookWithValue": "Andrew Jansen Van Rensburg - Physiotherapist",
-      "imageUrl": "/assets/images/about-us-page/team/andrew-monks-medical.jpg",
-      "bio": [
-        "Bsc Physiotherapy (Hons), Internationally Certified Competitive Triathlon Coach (ITU), Pilates Conditioning (Pretoria).",
-        "Andrew was the consultant Physiotherapist for the South African National Triathlon Team from 2008 to 2012, and consults for other professional sporting teams in a rehabilitation and performance enhancement role. He is internationally published on articles regarding core strength and overuse injuries. He has been a Clinical Pilates instructor since 2001 and has modified his approach tfo great effect in the rehabilitation and performance fields.",
-        "He has been instrumental in advancing the Clinical Pilates field by using Real Time Ultrasound to assess the efficacy of Transversus Abdominis and Multifidus contractions. The modification of core strength programs by making the programs more functional, and clinically objectively measurable has shown a significant improvement in the long-term rehabilitation rates of his patients.",
-        "Andrew is an ITU (International Triathlon Union) Level 2 certified competitive Triathlon Coach and Running Coach, coaching and guiding athletes to all distances of races from Sprint distance Triathlons to Ironman, and from 10km Road running races up to Comrades Marathon. A particular niche of Andrews training is Ultra Distance Trail and road running, having an acute understanding of the intricacies needed to work on in order to succeed in these tough events.",
-        "Andrew was the head of the Triathlon South Africa Medical Commission from 2006 to 2016, and ran Triathlon/Duathlon clinics for underprivileged children affected by HIV/Aids at Noahs Ark in Diepsloot, Soweto.",
-        "As an athlete Andrew is a sub 3hr Marathon Runner, Ultra Distance Trail runner, Mountain biker and Adventure Racer. He has completed 4 Full Ironman and 20+ Half Ironman races and back to back Comrades Marathons. Currently Andrew competes in Ultra Distance Trail running with top ten finishes in all 8 of South Africa's 100 Mile trail runs, including winning the Cederberg Traverse 100 Miler. In October 2023, Andrew Competed in the World Championships for Adventure Racing where he completed the full course in 7 days with his team, overcoming many adverse conditions along the way.",
-        "Active and Balanced lifestyles are what Andrew promotes, and strives to get each individual to achieve their goals and maintain their bodies to be able to achieve what they set out to do."
-      ]
-    },
-    {
-      "name": "Sally Morris",
-      "jobTitle": "Sonographer",
-      "bookWithValue": "Sally Morris - Sonographer",
-      "imageUrl": "/assets/images/about-us-page/team/sally-monks-medical.jpg",
-      "bio": [
-        "Lorem ipsum dolor sit amet consectetur. Nibh viverra bibendum ullamcorper ut justo nisi neque sagittis montes. Sed eu amet diam in nam egestas. Id ut neque tincidunt penatibus et. Viverra ultrices ornare volutpat mi sed cras amet aliquet. Sed est adipiscing ultrices mattis laoreet pellentesque nunc lobortis tincidunt. Ut in imperdiet urna nunc pulvinar bibendum maecenas. Tellus eget cursus nisi praesent justo.",
-        "Sem posuere mauris pellentesque mollis nunc vel integer lobortis. Vel vel ornare porta felis lorem feugiat. Donec rhoncus aliquam eu etiam ut eleifend. Convallis id lorem urna scelerisque curabitur. Id volutpat aliquet nibh libero sit suspendisse. Imperdiet neque dolor dui sagittis dui nunc at massa et. Nibh enim mattis massa urna velit sed sit. Potenti nulla porttitor etiam eu amet facilisi nibh egestas dignissim. Eget non ut suspendisse quis. Purus id dui auctor volutpat ullamcorper consectetur turpis felis lectus."
-      ]
-    },
-    {
-      "name": "Jana Van Zyl",
-      "jobTitle": "Physiotherapist",
-      "bookWithValue": "Jana Van Zyl - Physiotherapist",
-      "imageUrl": "/assets/images/about-us-page/team/yana-monks-medical.jpg",
-      "bio": [
-        "Jana graduated from the University of the Western Cape with a Bachelor of Science in Physiotherapy in 2019. She then went on to complete her Community Service year in 2020 at Tygerberg Hospital, where she broadened her knowledge with orthopaedic conditions and post operative care.",
-        "At the beginning of 2021, she started working at Marulize Swart Physiotherapists at Louis Leipoldt MediClinic where she mastered new skills and gained valuable experience, especially in treating pediatric conditions and orthopaedics. Continued Musculoskeletal techniques and interest management of pain bolster her skill set. Between spending time with her husband and chasing around after their busy toddler, she has completed the following post graduate courses in Basi Pilates Mat Teacher Training Course and Optimal Dry Needling Solutions."
-      ]
-    },
-    {
-      "name": "Halina Olivier",
-      "jobTitle": "Medwave Therapist",
-      "bookWithValue": "Halina Olivier - Medwave Therapist",
-      "imageUrl": "/assets/images/about-us-page/team/halina-monks-medical.jpg",
-      "bio": [
-        "Lorem ipsum dolor sit amet consectetur. Nibh viverra bibendum ullamcorper ut justo nisi neque sagittis montes. Sed eu amet diam in nam egestas. Id ut neque tincidunt penatibus et. Viverra ultrices ornare volutpat mi sed cras amet aliquet. Sed est adipiscing ultrices mattis laoreet pellentesque nunc lobortis tincidunt. Ut in imperdiet urna nunc pulvinar bibendum maecenas. Tellus eget cursus nisi praesent justo.",
-        "Sem posuere mauris pellentesque mollis nunc vel integer lobortis. Vel vel ornare porta felis lorem feugiat. Donec rhoncus aliquam eu etiam ut eleifend. Convallis id lorem urna scelerisque curabitur. Id volutpat aliquet nibh libero sit suspendisse. Imperdiet neque dolor dui sagittis dui nunc at massa et. Nibh enim mattis massa urna velit sed sit. Potenti nulla porttitor etiam eu amet facilisi nibh egestas dignissim. Eget non ut suspendisse quis. Purus id dui auctor volutpat ullamcorper consectetur turpis felis lectus."
-      ]
-    }
-  ],
-  "aboutPage": {
-    "paragraphs": [
-      "Monks Medical is a collaborative healthcare practice offering comprehensive general medical services alongside advanced preventative and performance-based therapies.",
-      "The practice provides acute care, chronic disease management, pregnancy monitoring, childhood vaccinations, diagnostic ultrasound services, injury rehabilitation and optimisation programmes within a single coordinated environment.",
-      "By integrating physiotherapy, ultrasound diagnostics, nursing services and advanced therapeutic modalities, Monks Medical delivers continuity of care while maintaining the standards of a trusted family general practice.",
-      "Our mission is to provide personalised, evidence-based care that supports patients at every stage of life — from routine consultations to performance optimisation and long-term preventative health strategies."
-    ],
-    "heroImage": "/assets/images/about-us-page/monks-medical-about-us-page-4.jpg",
-    "images": [
-      "/assets/images/about-us-page/monks-medical-about-us-page-3.jpg",
-      "/assets/images/about-us-page/monks-medical-about-us-page-2.jpg",
-      "/assets/images/about-us-page/monks-medical-about-us-page-1.jpg"
-    ]
-  },
-  "slider": [
-    "/assets/images/monks-medical-61.jpg",
-    "/assets/images/monks-medical-8.jpg",
-    "/assets/images/monks-medical-2.jpg",
-    "/assets/images/monks-medical-11.jpg",
-    "/assets/images/monks-medical-12.jpg",
-    "/assets/images/monks-medical-57.jpg",
-    "/assets/images/monks-medical-28.jpg",
-    "/assets/images/monks-medical-59.jpg",
-    "/assets/images/monks-medical-60.jpg",
-    "/assets/images/monks-medical-71.jpg",
-    "/assets/images/monks-medical-62.jpg",
-    "/assets/images/monks-medical-63.jpg"
-  ],
   "homePage": {
+    "heroSlider": [
+      "/assets/images/home-page/hero-slider/monks-medical-hero-slider-9.jpg",
+      "/assets/images/home-page/hero-slider/monks-medical-hero-slider-11.jpg",
+      "/assets/images/home-page/hero-slider/monks-medical-hero-slider-5.jpg",
+      "/assets/images/home-page/hero-slider/monks-medical-hero-slider-4.jpg",
+      "/assets/images/home-page/hero-slider/monks-medical-hero-slider-7.jpg",
+      "/assets/images/home-page/hero-slider/monks-medical-hero-slider-10.jpg",
+      "/assets/images/home-page/hero-slider/monks-medical-hero-slider-8.jpg",
+      "/assets/images/home-page/hero-slider/monks-medical-hero-slider-3.jpg",
+      "/assets/images/home-page/hero-slider/monks-medical-hero-slider-12.jpg",
+      "/assets/images/home-page/hero-slider/monks-medical-hero-slider-2.jpg",
+      "/assets/images/home-page/hero-slider/monks-medical-hero-slider-6.jpg"
+    ],
     "about": {
       "teamImage": "/assets/images/home-page/about/monks-medical-team.jpg",
       "images": [
@@ -134,7 +51,7 @@
       "advanced": [
         {
           "title": "MedWave photobiomodulation therapy (red light therapy)",
-          "link": "/assets/brochures/MedWave_Client_Brochure.pdf"
+          "link": "/advanced#medwave"
         },
         {
           "title": "Intravenous nutrient therapy",
@@ -210,5 +127,77 @@
       ],
       "clinicalNote": "IV nutrient therapy at Monks Medical is delivered within a medical setting and is evidence-informed. It is not intended to diagnose, treat or replace essential medical therapy where indicated."
     }
+  },
+  "aboutPage": {
+    "paragraphs": [
+      "Monks Medical is a collaborative healthcare practice offering comprehensive general medical services alongside advanced preventative and performance-based therapies.",
+      "The practice provides acute care, chronic disease management, pregnancy monitoring, childhood vaccinations, diagnostic ultrasound services, injury rehabilitation and optimisation programmes within a single coordinated environment.",
+      "By integrating physiotherapy, ultrasound diagnostics, nursing services and advanced therapeutic modalities, Monks Medical delivers continuity of care while maintaining the standards of a trusted family general practice.",
+      "Our mission is to provide personalised, evidence-based care that supports patients at every stage of life — from routine consultations to performance optimisation and long-term preventative health strategies."
+    ],
+    "heroImage": "/assets/images/about-us-page/monks-medical-about-us-page-4.jpg",
+    "images": [
+      "/assets/images/about-us-page/monks-medical-about-us-page-3.jpg",
+      "/assets/images/about-us-page/monks-medical-about-us-page-2.jpg",
+      "/assets/images/about-us-page/monks-medical-about-us-page-1.jpg"
+    ],
+    "team": [
+      {
+        "name": "Dr. Kyle Rorke",
+        "jobTitle": "General Practitioner",
+        "bookWithValue": "Dr. Kyle Rorke - GP",
+        "imageUrl": "/assets/images/about-us-page/team/dr-kyle-rorke-monks-medical.jpg",
+        "bio": [
+          "Dr Kyle Rorke is a general practitioner with a strong commitment to personalised and preventative medicine. He leads Monks Medical with the vision of providing comprehensive, coordinated healthcare within a modern, collaborative clinical environment.",
+          "While maintaining the full scope of traditional GP services, Dr Rorke has developed particular expertise in metabolic health, performance optimisation and preventative care. His approach is grounded in clinical medicine while recognising the importance of lifestyle, movement, recovery and long-term disease prevention. He works closely with an integrated team of physiotherapists, a sonographer and a professional nurse to ensure patients receive coordinated, comprehensive care tailored to their individual needs.",
+          "Dr Rorke believes that medicine should extend beyond treating illness. His focus is on empowering patients with knowledge, implementing structured health strategies, and supporting sustainable long-term wellbeing."
+        ]
+      },
+      {
+        "name": "Sr. Heilet Van Endt",
+        "jobTitle": "Midwife",
+        "bookWithValue": "Sr. Heilet Van Endt - Midwife",
+        "imageUrl": "/assets/images/about-us-page/team/heilet-monks-medical.jpg",
+        "bio": [
+          "I am a registered nurse and midwife with a BCur degree, specialising in midwifery, infection control, and hospital management. I run my own practice where I offer comprehensive care for pregnancies, newborns, contraception, and routine women's health services such as Pap smears. I also provide well-baby clinic services, including growth monitoring and paediatric vaccinations, supporting parents through their child's early developmental stages with evidence-based, compassionate care. My focus is on creating a safe, professional, and welcoming environment for every patient.",
+          "Beyond my professional role, I am a wife and a mother of two, which gives me a deep appreciation for the realities of family life and parenthood. I enjoy running, reading, and playing classical music on the flute and piano — interests that reflect balance, discipline, and calm. These values shape the holistic and caring approach I bring to my practice and to the families I serve."
+        ]
+      },
+      {
+        "name": "Andrew Jansen Van Rensburg",
+        "jobTitle": "Physiotherapist",
+        "bookWithValue": "Andrew Jansen Van Rensburg - Physiotherapist",
+        "imageUrl": "/assets/images/about-us-page/team/andrew-monks-medical.jpg",
+        "bio": [
+          "Bsc Physiotherapy (Hons), Internationally Certified Competitive Triathlon Coach (ITU), Pilates Conditioning (Pretoria).",
+          "Andrew was the consultant Physiotherapist for the South African National Triathlon Team from 2008 to 2012, and consults for other professional sporting teams in a rehabilitation and performance enhancement role. He is internationally published on articles regarding core strength and overuse injuries. He has been a Clinical Pilates instructor since 2001 and has modified his approach tfo great effect in the rehabilitation and performance fields.",
+          "He has been instrumental in advancing the Clinical Pilates field by using Real Time Ultrasound to assess the efficacy of Transversus Abdominis and Multifidus contractions. The modification of core strength programs by making the programs more functional, and clinically objectively measurable has shown a significant improvement in the long-term rehabilitation rates of his patients.",
+          "Andrew is an ITU (International Triathlon Union) Level 2 certified competitive Triathlon Coach and Running Coach, coaching and guiding athletes to all distances of races from Sprint distance Triathlons to Ironman, and from 10km Road running races up to Comrades Marathon. A particular niche of Andrews training is Ultra Distance Trail and road running, having an acute understanding of the intricacies needed to work on in order to succeed in these tough events.",
+          "Andrew was the head of the Triathlon South Africa Medical Commission from 2006 to 2016, and ran Triathlon/Duathlon clinics for underprivileged children affected by HIV/Aids at Noahs Ark in Diepsloot, Soweto.",
+          "As an athlete Andrew is a sub 3hr Marathon Runner, Ultra Distance Trail runner, Mountain biker and Adventure Racer. He has completed 4 Full Ironman and 20+ Half Ironman races and back to back Comrades Marathons. Currently Andrew competes in Ultra Distance Trail running with top ten finishes in all 8 of South Africa's 100 Mile trail runs, including winning the Cederberg Traverse 100 Miler. In October 2023, Andrew Competed in the World Championships for Adventure Racing where he completed the full course in 7 days with his team, overcoming many adverse conditions along the way.",
+          "Active and Balanced lifestyles are what Andrew promotes, and strives to get each individual to achieve their goals and maintain their bodies to be able to achieve what they set out to do."
+        ]
+      },
+      {
+        "name": "Sally Morris",
+        "jobTitle": "Sonographer",
+        "bookWithValue": "Sally Morris - Sonographer",
+        "imageUrl": "/assets/images/about-us-page/team/sally-monks-medical.jpg",
+        "bio": [
+          "Lorem ipsum dolor sit amet consectetur. Nibh viverra bibendum ullamcorper ut justo nisi neque sagittis montes. Sed eu amet diam in nam egestas. Id ut neque tincidunt penatibus et. Viverra ultrices ornare volutpat mi sed cras amet aliquet. Sed est adipiscing ultrices mattis laoreet pellentesque nunc lobortis tincidunt. Ut in imperdiet urna nunc pulvinar bibendum maecenas. Tellus eget cursus nisi praesent justo.",
+          "Sem posuere mauris pellentesque mollis nunc vel integer lobortis. Vel vel ornare porta felis lorem feugiat. Donec rhoncus aliquam eu etiam ut eleifend. Convallis id lorem urna scelerisque curabitur. Id volutpat aliquet nibh libero sit suspendisse. Imperdiet neque dolor dui sagittis dui nunc at massa et. Nibh enim mattis massa urna velit sed sit. Potenti nulla porttitor etiam eu amet facilisi nibh egestas dignissim. Eget non ut suspendisse quis. Purus id dui auctor volutpat ullamcorper consectetur turpis felis lectus."
+        ]
+      },
+      {
+        "name": "Jana Van Zyl",
+        "jobTitle": "Physiotherapist",
+        "bookWithValue": "Jana Van Zyl - Physiotherapist",
+        "imageUrl": "/assets/images/about-us-page/team/yana-monks-medical.jpg",
+        "bio": [
+          "Jana graduated from the University of the Western Cape with a Bachelor of Science in Physiotherapy in 2019. She then went on to complete her Community Service year in 2020 at Tygerberg Hospital, where she broadened her knowledge with orthopaedic conditions and post operative care.",
+          "At the beginning of 2021, she started working at Marulize Swart Physiotherapists at Louis Leipoldt MediClinic where she mastered new skills and gained valuable experience, especially in treating pediatric conditions and orthopaedics. Continued Musculoskeletal techniques and interest management of pain bolster her skill set. Between spending time with her husband and chasing around after their busy toddler, she has completed the following post graduate courses in Basi Pilates Mat Teacher Training Course and Optimal Dry Needling Solutions."
+        ]
+      }
+    ]
   }
 }

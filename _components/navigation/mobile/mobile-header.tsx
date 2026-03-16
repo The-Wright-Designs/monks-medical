@@ -64,6 +64,7 @@ const MobileHeader = () => {
       </div>
       <MobileMenuToggle
         onClick={() => setShowMenuToggle(!showMenuToggle)}
+        isOpen={showMenuToggle}
         cssClasses={classNames(
           "fixed top-16 z-50 w-full h-screen overflow-y-auto bg-white px-6 pt-6 ease-in-out duration-500 tablet:px-10 desktop:hidden",
           {

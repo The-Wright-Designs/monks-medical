@@ -16,7 +16,9 @@ interface Props {
 }
 
 const Slider = ({ cssClasses, desktop }: Props) => {
-  const { slider } = data;
+  const {
+    homePage: { heroSlider },
+  } = data;
 
   if (desktop) {
     return (
@@ -39,7 +41,7 @@ const Slider = ({ cssClasses, desktop }: Props) => {
             dynamicBullets: true,
           }}
         >
-          {slider.map((slide, index) => (
+          {heroSlider.map((slide, index) => (
             <SwiperSlide key={index}>
               <Image
                 src={slide}
@@ -93,7 +95,7 @@ const Slider = ({ cssClasses, desktop }: Props) => {
         modules={[Autoplay]}
         className={cssClasses}
       >
-        {slider.map((slide, index) => (
+        {heroSlider.map((slide, index) => (
           <SwiperSlide key={index}>
             <Image
               src={slide}

@@ -52,7 +52,6 @@ const AdvancedServicesComponent = () => {
                 {hasLink && link ? (
                   <Link
                     href={link}
-                    target="_blank"
                     rel="noopener noreferrer"
                     className="group desktop:hover:cursor-pointer"
                   >
