@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="border-t-2 border-khaki mt-20">
       <div className="py-10 bg-[url('https://ik.imagekit.io/thewrightdesigns/tr:q-55,w-450/monks-medical-53.jpg')] phone:bg-[url('https://ik.imagekit.io/thewrightdesigns/tr:q-55,w-650/monks-medical-53.jpg')] tablet:bg-[url('https://ik.imagekit.io/thewrightdesigns/tr:q-55,w-1150/monks-medical-53.jpg')] bg-cover bg-center max-w-[1100px] mx-auto relative px-8">
         <div className="hidden desktop:block bg-gradient-to-r from-white to-transparent w-8 absolute left-0 top-0 h-full"></div>
-        <div className="grid gap-10 desktop:grid-cols-2 desktop:place-items-stretch desktop:gap-5">
+        <div className="grid gap-5 desktop:grid-cols-2 desktop:place-items-stretch desktop:gap-5">
           <div className="hidden desktop:block">
             <p className="font-medium mb-5">Navigation</p>
             <ul className="grid gap-1.5">
@@ -57,7 +57,7 @@ const Footer = () => {
               {"© Monk's Medical 2024"}
             </p>
           </div>
-          <div className="desktop:grid gap-10 place-items-end">
+          <div className="desktop:grid gap-10 desktop:place-items-end">
             <Image
               src="/assets/icons/monks-medical-logo-2.svg"
               alt="Monk's Medical logo"
