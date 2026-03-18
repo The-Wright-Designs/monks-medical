@@ -5,7 +5,7 @@ import Image from "next/image";
 const Medwave = () => {
   return (
     <div className="flex flex-col gap-15">
-      <h2 className="text-left hyphens-auto">
+      <h2 className="text-left text-[32px] hyphens-auto phone:text-heading">
         MedWave Photo&shy;bio&shy;modulation & Vibration Therapy
       </h2>
       <div className="grid tablet:grid-cols-2 gap-10">
@@ -94,7 +94,7 @@ const Medwave = () => {
       </AdvancedItem>
       <article className="grid gap-10 tablet:grid-cols-2">
         <div className="flex flex-col gap-5">
-          <h3 className="text-left break-words">What to Expect</h3>
+          <h3 className="text-left">What to Expect</h3>
           <div className="flex flex-col gap-5 desktop:items-start">
             <div className="flex flex-col gap-5">
               <div>

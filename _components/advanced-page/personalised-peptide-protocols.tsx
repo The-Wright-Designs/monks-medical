@@ -6,7 +6,9 @@ import generalData from "@/_data/general-data.json";
 const PersonalisedPeptideProtocols = () => {
   return (
     <div className="flex flex-col gap-15">
-      <h2 className="text-left">Personalised Peptide Protocols</h2>
+      <h2 className="text-left text-[32px] hyphens-auto phone:text-heading">
+        Personal&shy;ised Peptide Protocols
+      </h2>
       <div className="flex flex-col gap-15 tablet:gap-10">
         <p>
           Peptides are short chains of amino acids that function as signalling
